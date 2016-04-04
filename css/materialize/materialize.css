@@ -2068,12 +2068,10 @@ a {
   -webkit-tap-highlight-color: transparent; }
 
 .valign-wrapper {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+      align-items: center; }
   .valign-wrapper .valign {
     display: block; }
 
@@ -2228,7 +2226,6 @@ video.responsive-video {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
 
 .pin-top, .pin-bottom {
@@ -2246,7 +2243,6 @@ ul.staggered-list li {
 .fade-in {
   opacity: 0;
   -webkit-transform-origin: 0 50%;
-      -ms-transform-origin: 0 50%;
           transform-origin: 0 50%; }
 
 /*********************
@@ -2634,6 +2630,7 @@ input[type=range] + .thumb {
 .material-icons {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
           font-feature-settings: 'liga'; }
 
 .container {
@@ -3077,13 +3074,13 @@ input[type=range] + .thumb {
         left: 100%; } }
 
 nav {
-  color: black;
+  color: #fff;
   background-color: white;
   width: 100%;
   height: 56px;
   line-height: 56px; }
   nav a {
-    color: black; }
+    color: #fff; }
   nav i,
   nav [class^="mdi-"], nav [class*="mdi-"],
   nav i.material-icons {
@@ -3108,7 +3105,7 @@ nav {
       line-height: 56px; }
   nav .brand-logo {
     position: absolute;
-    color: black;
+    color: #fff;
     display: inline-block;
     font-size: 2.1rem;
     padding: 0;
@@ -3116,18 +3113,15 @@ nav {
     nav .brand-logo.center {
       left: 50%;
       -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
     @media only screen and (max-width: 992px) {
       nav .brand-logo {
         left: 50%;
         -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
                 transform: translateX(-50%); }
         nav .brand-logo.left, nav .brand-logo.right {
           padding: 0;
           -webkit-transform: none;
-              -ms-transform: none;
                   transform: none; }
         nav .brand-logo.left {
           left: 0.5rem; }
@@ -3148,7 +3142,7 @@ nav {
     nav ul a {
       transition: background-color .3s;
       font-size: 1rem;
-      color: black;
+      color: #fff;
       display: inline-block;
       padding: 0 15px;
       cursor: pointer; }
@@ -3177,10 +3171,9 @@ nav {
         color: rgba(255, 255, 255, 0.7);
         transition: color .3s; }
       nav .input-field label.active i {
-        color: black; }
+        color: #fff; }
       nav .input-field label.active {
         -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
                 transform: translateY(0); }
 
 .navbar-fixed {
@@ -3494,15 +3487,12 @@ small {
   font-size: 1.1rem;
   font-weight: 300;
   color: #fff;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .toast .btn, .toast .btn-large, .toast .btn-flat {
     margin: 0;
     margin-left: 3rem; }
@@ -3520,7 +3510,6 @@ small {
       float: right; } }
 
 .tabs {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
@@ -3599,7 +3588,6 @@ small {
   background-color: #323232;
   z-index: -1;
   -webkit-transform-origin: 50% 10%;
-      -ms-transform-origin: 50% 10%;
           transform-origin: 50% 10%;
   will-change: transform, opacity; }
 
@@ -3711,7 +3699,6 @@ button.btn-floating {
       right: 64px;
       top: 50%;
       -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       height: 100%;
       left: auto;
@@ -3827,7 +3814,6 @@ button.btn-floating {
     transition-property: -webkit-transform, opacity;
     transition-property: transform, opacity;
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
             transform: scale(0);
     pointer-events: none; }
   .waves-effect.waves-light .waves-ripple {
@@ -4048,7 +4034,6 @@ a.waves-effect .waves-ripple {
 
 .materialboxed {
   display: block;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
   position: relative;
   transition: opacity .4s; }
@@ -4058,7 +4043,6 @@ a.waves-effect .waves-ripple {
       opacity: .8; }
 
 .materialboxed.active {
-  cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 #materialbox-overlay {
@@ -4383,7 +4367,6 @@ textarea.materialize-textarea {
   .input-field label.active {
     font-size: 0.8rem;
     -webkit-transform: translateY(-140%);
-        -ms-transform: translateY(-140%);
             transform: translateY(-140%); }
   .input-field .prefix {
     position: absolute;
@@ -4512,7 +4495,6 @@ textarea {
 [type="radio"]:not(:checked) + label:after {
   z-index: -1;
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
           transform: scale(0); }
 
 /* Checked styles */
@@ -4531,13 +4513,11 @@ textarea {
 
 [type="radio"]:checked + label:after {
   -webkit-transform: scale(1.02);
-      -ms-transform: scale(1.02);
           transform: scale(1.02); }
 
 /* Radio With gap */
 [type="radio"].with-gap:checked + label:after {
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
           transform: scale(0.5); }
 
 /* Focused styles */
@@ -4619,14 +4599,12 @@ form p:last-child {
   [type="checkbox"]:not(.filled-in) + label:after {
     border: 0;
     -webkit-transform: scale(0);
-        -ms-transform: scale(0);
             transform: scale(0); }
   [type="checkbox"]:not(:checked):disabled + label:before {
     border: none;
     background-color: rgba(0, 0, 0, 0.26); }
   [type="checkbox"].tabbed:focus + label:after {
     -webkit-transform: scale(1);
-        -ms-transform: scale(1);
             transform: scale(1);
     border: 0;
     border-radius: 50%;
@@ -4643,12 +4621,10 @@ form p:last-child {
   border-right: 2px solid #26a69a;
   border-bottom: 2px solid #26a69a;
   -webkit-transform: rotate(40deg);
-      -ms-transform: rotate(40deg);
           transform: rotate(40deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
           transform-origin: 100% 100%; }
 
 [type="checkbox"]:checked:disabled + label:before {
@@ -4666,12 +4642,10 @@ form p:last-child {
   border-right: 2px solid #26a69a;
   border-bottom: none;
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform-origin: 100% 100%;
-      -ms-transform-origin: 100% 100%;
           transform-origin: 100% 100%; }
 
 [type="checkbox"]:indeterminate:disabled + label:before {
@@ -4699,8 +4673,7 @@ form p:last-child {
   -webkit-transform: rotateZ(37deg);
   transform: rotateZ(37deg);
   -webkit-transform-origin: 20% 40%;
-  -ms-transform-origin: 100% 100%;
-      transform-origin: 100% 100%; }
+  transform-origin: 100% 100%; }
 
 [type="checkbox"].filled-in:not(:checked) + label:after {
   height: 20px;
@@ -4722,8 +4695,7 @@ form p:last-child {
   -webkit-transform: rotateZ(37deg);
   transform: rotateZ(37deg);
   -webkit-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-      transform-origin: 100% 100%; }
+  transform-origin: 100% 100%; }
 
 [type="checkbox"].filled-in:checked + label:after {
   top: 0;
@@ -4973,10 +4945,8 @@ input[type=range] + .thumb {
   top: 10px;
   margin-left: -6px;
   -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
   input[type=range] + .thumb .value {
     display: block;
@@ -4985,7 +4955,6 @@ input[type=range] + .thumb {
     color: #26a69a;
     font-size: 0;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
   input[type=range] + .thumb.active {
     border-radius: 50% 50% 50% 0; }
@@ -5104,7 +5073,6 @@ input[type=range]:focus::-ms-fill-upper {
   top: 0;
   margin: 0;
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
   height: 100%;
   height: calc(100% + 60px);
@@ -5118,16 +5086,13 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: translateX(-105%);
-      -ms-transform: translateX(-105%);
           transform: translateX(-105%); }
   .side-nav.right-aligned {
     right: 0;
     -webkit-transform: translateX(105%);
-        -ms-transform: translateX(105%);
             transform: translateX(105%);
     left: auto;
     -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
             transform: translateX(100%); }
   .side-nav .collapsible {
     margin: 0; }
@@ -5171,7 +5136,6 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav.fixed {
   left: 0;
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0);
   position: fixed; }
   .side-nav.fixed.right-aligned {
@@ -5181,11 +5145,9 @@ input[type=range]:focus::-ms-fill-upper {
 @media only screen and (max-width: 992px) {
   .side-nav.fixed {
     -webkit-transform: translateX(-105%);
-        -ms-transform: translateX(-105%);
             transform: translateX(-105%); }
     .side-nav.fixed.right-aligned {
       -webkit-transform: translateX(105%);
-          -ms-transform: translateX(105%);
               transform: translateX(105%); } }
 
 .side-nav .collapsible-body li.active,
@@ -5524,14 +5486,12 @@ input[type=range]:focus::-ms-fill-upper {
     left: 0;
     border-right-color: transparent !important;
     -webkit-transform: rotate(129deg);
-    -ms-transform: rotate(129deg);
-        transform: rotate(129deg); }
+    transform: rotate(129deg); }
   .circle-clipper.right .circle {
     left: -100%;
     border-left-color: transparent !important;
     -webkit-transform: rotate(-129deg);
-    -ms-transform: rotate(-129deg);
-        transform: rotate(-129deg); }
+    transform: rotate(-129deg); }
 
 .active .circle-clipper.left .circle {
   /* duration: ARCTIME */
@@ -5674,7 +5634,6 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform-origin: 0% 50%;
-      -ms-transform-origin: 0% 50%;
           transform-origin: 0% 50%; }
   .carousel .carousel-item {
     width: 200px;
@@ -6005,7 +5964,6 @@ input[type=range]:focus::-ms-fill-upper {
 .picker--focused .picker__day--selected {
   border-radius: 50%;
   -webkit-transform: scale(0.75);
-      -ms-transform: scale(0.75);
           transform: scale(0.75);
   background: #0089ec;
   color: #ffffff; }
@@ -6027,15 +5985,12 @@ input[type=range]:focus::-ms-fill-upper {
  */
 .picker__footer {
   text-align: center;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .picker__button--today,
 .picker__button--clear,
@@ -6178,7 +6133,6 @@ input[type=range]:focus::-ms-fill-upper {
 .picker--focused .picker__day--selected {
   border-radius: 50%;
   -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
           transform: scale(0.9);
   background-color: #26a69a;
   color: #ffffff; }
@@ -6335,364 +6289,3 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
-
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-/**
- * Misc
- */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-/**
- * Typography
- */
-/**
-*
-* SVG-Sprites
-*
-**/
-/*doc
----
-title: SVG-Sprites
-name: svgsprites
-category: Components - SVG-Sprites
----
-
-SVG Sprites are a very effective and performant method of adding icons to your
-website. Our SVG's are generated by node svg-sprite which compiles all of the
-svg's listed in the /svg directory into one file. You can then utilize the <use>
-tag to pull certain shapes listed in that file into your website. Make sure that
-you are also setting the correct viewBox dimensions from your original svg.
-
-```html_example
-    <svg class="svg svg--thearrow" viewBox="0 0 58 96">
-      <use xlink:href="../svg/dist/symbol/svg/sprite.symbol.svg#thearrow"></use>
-    </svg>
-```
-*/
-.codeExample .svg {
-  max-width: 100px;
-  margin: auto; }
-
-body {
-  font-size: 16px;
-  line-height: 1.8;
-  font-family: 'Open Sans';
-  color: #777;
-  font-weight: 300; }
-  @media (min-width: 500px) {
-    body {
-      font-size: 17.6px; } }
-  @media (min-width: 800px) {
-    body {
-      font-size: 19.2px; } }
-
-.main {
-  padding: 2em 0; }
-
-.footer {
-  border-top: 1px solid lightgray;
-  padding: 2em 0; }
-
-.footer-logo {
-  font-size: .9rem;
-  color: lightgray;
-  text-align: center; }
-
-nav {
-  box-shadow: none; }
-  nav .brand-logo {
-    font-family: 'Open Sans';
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 1.3rem; }
-    @media (min-width: 992px) {
-      nav .brand-logo {
-        font-size: 1.6rem; } }
-  nav ul li a {
-    text-transform: uppercase;
-    font-size: .9rem;
-    color: gray;
-    font-weight: 400; }
-
-/**
-*
-* Alerts
-*
-**/
-/*doc
----
-title: Alerts
-name: alerts
-category: Components - Alerts
----
-```html_example
-    <div class='alert'>Alert: Everything went just as planned</div>
-```
-```html_example
-    <div class='alert alert--warning'>Alert: This is a warning</div>
-```
-```html_example
-    <div class='alert alert--error'>Alert: This is an error</div>
-```
-*/
-.alert,
-.alert--warning,
-.alert--error {
-  display: block;
-  padding: .8em;
-  background: #19AA19;
-  color: white;
-  border-radius: 8px;
-  font-size: 1.1em; }
-
-.alert--warning {
-  background: #ECEC4B;
-  color: black; }
-
-.alert--error {
-  background: red; }
-
-/**
-*
-* Buttons
-*
-**/
-/*doc
----
-title: Buttons
-name: buttons
-category: Components - Buttons
----
-```html_example
-    <div class='button'>Button</div>
-```
-```html_example
-    <div class='button button--primary'>Button Primary</div>
-```
-```html_example
-    <div class='button button--secondary'>Button Secondary</div>
-```
-*/
-.button, .button--primary, .button--secondary {
-  display: inline-block;
-  padding: 12px 32px;
-  margin-bottom: 13px;
-  margin-top: 13px;
-  min-height: 26px;
-  text-align: center;
-  font-weight: 600;
-  text-decoration: none;
-  outline: 0;
-  transition: none;
-  border: 1px solid transparent; }
-  .button:hover, .button--primary:hover, .button--secondary:hover {
-    background: #4d4d4d;
-    color: #ffffff;
-    border: 1px solid #4d4d4d;
-    text-decoration: none; }
-
-.button--primary {
-  background: #4285f4;
-  color: #ffffff;
-  border: 1px solid #1266f1; }
-
-.button--secondary {
-  background: #4285f4;
-  color: #ffffff;
-  border: 1px solid #1266f1; }
-
-.callout {
-  font-weight: 300;
-  text-align: center;
-  font-size: 2.6rem;
-  padding: 1em 0; }
-
-.ksb-banner {
-  min-height: 35vw;
-  min-height: 60vmin;
-  background: black;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  background-size: cover;
-  background-position: center center; }
-  .ksb-banner__title {
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 2.1rem;
-    text-align: center; }
-    @media (min-width: 992px) {
-      .ksb-banner__title {
-        font-size: 3rem; } }
-
-.ksb-card__group {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-top: 1px solid lightgray; }
-
-.ksb-card__title {
-  color: #e6a83d;
-  font-weight: 300; }
-
-.ksb-card__image {
-  width: 100%;
-  padding-top: 56.6%;
-  overflow: hidden;
-  position: relative; }
-  .ksb-card__image img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
-
-.ksb-card__desc {
-  font-size: 1rem; }
-
-.ksb-card__readmore {
-  padding: 0; }
-
-/**
- * Nav
- */
-.nav__sitename {
-  width: 152.63158%;
-  float: left;
-  margin-right: 5.26316%; }
-
-.nav__menu {
-  width: 152.63158%;
-  float: right;
-  margin-right: 0;
-  float: right;
-  margin: 0;
-  padding: 0;
-  text-align: right; }
-  .nav__menu li {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-
-/**
-*
-* Slick Header
-*
-**/
-/*doc
----
-title: Slick Header
-name: slickheader
-category: Components - Slickheader
----
-```html_example
-  <div class="slickheader">
-    <h1 class="slickheader__title">Let's get coding</h1>
-    <div class="slickheader__subtitle">this is when it gets fun...</div>
-    <div class="slickheader__imgcontainer">
-      <img class="slickheader__img" src="http://i.telegraph.co.uk/multimedia/archive/02850/buzzBB5PW3_2850210b.jpg">
-    </div>
-  </div>
-```
-```html_example
-  <div class="slickheader slickheader--x-large">
-    <h1 class="slickheader__title">Let's get coding</h1>
-    <div class="slickheader__subtitle">this is when it gets fun...</div>
-    <div class="slickheader__imgcontainer">
-      <img class="slickheader__img" src="http://i.telegraph.co.uk/multimedia/archive/02850/buzzBB5PW3_2850210b.jpg">
-    </div>
-  </div>
-```
-*/
-.slickheader {
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  overflow: hidden;
-  display: block;
-  height: 30vw;
-  text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  z-index: 10; }
-
-.slickheader__title {
-  color: white;
-  margin-bottom: 0;
-  text-shadow: 1px 1px 5px #000;
-  position: relative;
-  z-index: 10; }
-
-.slickheader__subtitle {
-  color: white;
-  text-shadow: 1px 1px 5px #000;
-  position: relative;
-  z-index: 10;
-  line-height: 120%; }
-
-.slickheader__imgcontainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0; }
-
-.slickheader__img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  object-position: 50% 30%; }
-  @media (min-width: 800px) {
-    .slickheader__img {
-      object-position: 50% 0%; } }
-
-.slickheader--x-large {
-  height: 50vw; }
-
-.social-bar {
-  border-top: 1px solid lightgray;
-  margin: 1em inherit;
-  padding: 1em inherit;
-  display: block;
-  overflow: hidden; }
-  .social-bar__item {
-    float: left;
-    width: 50%;
-    padding: .5em 2em; }
-    @media (min-width: 992px) {
-      .social-bar__item {
-        width: 25%;
-        padding: 2em; } }
-    .social-bar__item img {
-      width: 100%;
-      height: auto; }
-  .social-bar__title {
-    color: #e6a83d;
-    font-size: 1.6rem; }

@@ -1,0 +1,22 @@
+.ksb-banner {
+	min-height: 35vw;
+	min-height: 60vmin;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+
+	&__title {
+		color: white;
+		font-family: 'Open Sans';
+		font-size: 2.1rem;
+		text-align: center;
+		@include breakpoint($medium-screen) {
+			font-size: 3rem;
+		}
+	}
+}
+

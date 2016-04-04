@@ -1,0 +1,39 @@
+.ksb-card {
+	&__group {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-top: 1px solid lightgray;
+	}
+
+	&__title {
+		color: #e6a83d;
+		font-weight: 300;
+	}
+
+	&__image {
+		width: 100%;
+		padding-top: 56.6%;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	&__desc {
+		font-size: 1rem;
+	}
+
+	&__readmore {
+		// color: black;
+		// font-size: 1rem;
+		padding: 0;
+	}
+}

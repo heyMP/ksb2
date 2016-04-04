@@ -22,9 +22,9 @@
     "susy": "~2.2.6"
   },
   "overrides": {
-    "jquery": {
-      "ignore": "true"
-    },
+    // "jquery": {
+    //   "ignore": "true"
+    // },
     "svg4everybody": {
       "main": "svg4everybody.min.js"
     }

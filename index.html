@@ -2,56 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <meta name="description" content="The new generation of sports talk radio covering professional, collegiate & amateur sports in Pennsylvania 5-7pm Weekdays!">
     <title>Front-end Dev</title>
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/dist/third-party.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/dist/third-party.js"></script>
-    <script type="text/javascript" src="js/dist/bundle.js"></script>
   </head>
-  <body>
+  <body ng-app="ksb" ng-controller="mainController">
 
-    <nav class="nav clearfix">
+    <nav>
       <div class="container">
-        <div class="nav__sitename">Keystone Sports Beat 2</div>
-        <ul class="nav__menu">
-          <li><a href="styleguide/">Styleguide</a></li>
-        </ul>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Keystone Sports Beat</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li ng-repeat="section in sections"><a href="#{{section.url}}">{{section.title}}</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li ng-repeat="section in sections"><a href="{{section.url}}">{{section.title}}</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="banner clearfix">
-      <div class="slickheader">
-        <div class="container">
-          <h1 class="slickheader__title">Let's get coding yea bitches!</h1>
-          <div class="slickheader__subtitle">this is when it gets fun...</div>
-        </div>
-        <div class="slickheader__imgcontainer">
-          <img class="slickheader__img" src="http://i.telegraph.co.uk/multimedia/archive/02850/buzzBB5PW3_2850210b.jpg">
-      </div>
+    <div ng-view>
+
     </div>
 
-    <main class="main clearfix">
+    <footer class="footer">
       <div class="container">
-        <h2>Sports are dope.</h2>
-        <p>Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. Maecenas volutpat, nisl et dignissim pharetra, urna lectus ultrices est, vel pretium pede turpis id velit. Aliquam sagittis magna in felis egestas rutrum. Proin wisi libero, vestibulum eget, pulvinar nec, suscipit ut, mi. Integer in arcu ultricies leo dapibus ultricies. Sed rhoncus lobortis dolor. Suspendisse dolor. Mauris sapien velit, pulvinar non, rutrum non, consectetuer eget, metus. Morbi tincidunt lorem at urna. Etiam porta. Ut mauris. Phasellus tristique rhoncus magna. Nam tincidunt consequat urna. Sed tempor.</p>
-        <p>Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. Maecenas volutpat, nisl et dignissim pharetra, urna lectus ultrices est, vel pretium pede turpis id velit. Aliquam sagittis magna in felis egestas rutrum. Proin wisi libero, vestibulum eget, pulvinar nec, suscipit ut, mi. Integer in arcu ultricies leo dapibus ultricies. Sed rhoncus lobortis dolor. Suspendisse dolor. Mauris sapien velit, pulvinar non, rutrum non, consectetuer eget, metus. Morbi tincidunt lorem at urna. Etiam porta. Ut mauris. Phasellus tristique rhoncus magna. Nam tincidunt consequat urna. Sed tempor.</p>
-        <p>Aliquam lectus orci, adipiscing et, sodales ac, feugiat non, lacus. Ut dictum velit nec est. Quisque posuere, purus sit amet malesuada blandit, sapien sapien auctor arcu, sed pulvinar felis mi sollicitudin tortor. Maecenas volutpat, nisl et dignissim pharetra, urna lectus ultrices est, vel pretium pede turpis id velit. Aliquam sagittis magna in felis egestas rutrum. Proin wisi libero, vestibulum eget, pulvinar nec, suscipit ut, mi. Integer in arcu ultricies leo dapibus ultricies. Sed rhoncus lobortis dolor. Suspendisse dolor. Mauris sapien velit, pulvinar non, rutrum non, consectetuer eget, metus. Morbi tincidunt lorem at urna. Etiam porta. Ut mauris. Phasellus tristique rhoncus magna. Nam tincidunt consequat urna. Sed tempor.</p>
-      </div>
-    </main>
-
-    <footer class="footer clearfix">
-      <div class="container">
-        <p>Footer Content</p>
+        <div class="footer-logo">www.keystonesportsbeat.com</div>
       </div>
     </footer>
 
-    <svg class="svg-sample" viewBox="0 0 58 96">
-      <use xlink:href="svg/dist/symbol/svg/sprite.symbol.svg#thearrow"></use>
-    </svg>
+    <script type="text/javascript" src="js/dist/third-party.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/dist/bundle.js"></script>
   </body>
 </html>

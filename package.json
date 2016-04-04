@@ -1,7 +1,10 @@
 {
   "name": "heymp",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.3.1",
     "browserify": "^6.3.2",
@@ -12,17 +15,19 @@
     "gulp-concat": "^2.5.2",
     "gulp-filter": "^2.0.2",
     "gulp-hologram": "^1.2.0",
+    "gulp-image-resize": "^0.8.0",
     "gulp-jshint": "^1.5.1",
     "gulp-minify-css": "^0.5.1",
     "gulp-plumber": "^0.6.6",
     "gulp-sass": "^2.0.4",
+    "gulp-sass-glob": "^1.0.5",
     "gulp-shell": "^0.2.4",
     "gulp-svg-sprite": "1.0.19",
     "gulp-uglify": "^1.1.0",
     "jshint-stylish": "^0.1.5",
+    "lodash": "4.0.0",
     "main-bower-files": "^2.9.0",
-    "vinyl": "^0.4.6",
-    "lodash": "4.0.0"
+    "vinyl": "^0.4.6"
   },
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete"

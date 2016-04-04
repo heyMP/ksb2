@@ -1,6 +1,9 @@
 body {
   font-size: $base-font-size;
-  line-height: $base-line-height;
+  line-height: 1.8;
+  font-family: 'Open Sans';
+  color: $text-color;
+  font-weight: 300;
   @include breakpoint(500px) {
     font-size: $base-font-size * 1.1;
   }
