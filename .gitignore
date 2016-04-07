@@ -3,6 +3,7 @@ bower_components/
 node_modules/
 .vendor/bundle
 Gemfile.lock
+CNAME
 
 // For development purposes only
 styleguide/
