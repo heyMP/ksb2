@@ -38,31 +38,31 @@ var angularRoute = require('angular-route');
   .config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/', {
-     templateUrl: '/pages/home.html',
+     templateUrl: 'pages/home.html',
      controller: 'mainController'
     })
     .when('/show', {
-     templateUrl: '/pages/show.html',
+     templateUrl: 'pages/show.html',
      controller: 'mainController'
     })
     .when('/guys', {
-     templateUrl: '/pages/guys.html',
+     templateUrl: 'pages/guys.html',
      controller: 'mainController'
     })
     .when('/brian-tripp', {
-     templateUrl: '/pages/brian-tripp.html',
+     templateUrl: 'pages/brian-tripp.html',
      controller: 'mainController'
     })
     .when('/matt-mayer', {
-     templateUrl: '/pages/matt-mayer.html',
+     templateUrl: 'pages/matt-mayer.html',
      controller: 'mainController'
     })
     .when('/stream', {
-     templateUrl: '/pages/stream.html',
+     templateUrl: 'pages/stream.html',
      controller: 'mainController'
     })
     .when('/stations', {
-     templateUrl: '/pages/stations.html',
+     templateUrl: 'pages/stations.html',
      controller: 'mainController'
     })
     .otherwise({
